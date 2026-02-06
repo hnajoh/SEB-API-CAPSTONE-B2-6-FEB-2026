@@ -29,7 +29,7 @@ public class RefundService {
 
     public Refund getRefund(String id) {
         return Optional.ofNullable(store.get(id))
-                .orElseThrow(() -> new RuntimeException("Refund Not Found"));
+                .orElseThrow(() -> new RuntimeException("Refund Not Found?"));
     }
 
     public Refund checkStatus(String id) {
